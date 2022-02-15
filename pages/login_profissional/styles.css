@@ -1,0 +1,357 @@
+/* ============= HEADER ============= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 10.5%;
+
+  background-color: #1560A0;
+  color: #FFF;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-evenly;
+
+  min-width: 65%;
+
+  min-height: 3rem;
+}
+
+.search-input {
+  border: none;
+  border-radius: 10px;
+  
+  width: 28%;
+  max-height: 5rem;
+
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  margin: 0 0.2rem;
+}
+
+.search-form .radio-label {
+  font-size: 1.5rem;
+}
+
+.radio-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.btn-search {
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  padding: 1em 3em;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #9BD30F;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-container .user-auth-button {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.4rem;
+}
+
+.user-container p {
+  font-size: 1.4rem;
+  margin: 0 0.5rem
+}
+
+/* ============= MAIN ============= */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-identifier {
+  color: #8D8D8D;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* ============= LEFT INFO ============= */
+
+.login-info-container {
+  padding: 2.2% 10.5%;
+  background-color: #F4F4F4;
+}
+
+.login-info-container {
+  max-width: 55%;
+}
+
+/* ============= TOP LEFT TEXT ============= */
+
+.info-text-container {
+  margin-top: 4%;
+}
+
+.info-main-text {
+  font-size: 3.9rem;
+  font-weight: bold;
+  line-height: 43px;
+  color: #2B8E91;
+}
+
+.info-sub-text {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-top: 1%;
+  color: #525252;
+}
+
+/* ============= BOTTOM LEFT STAMPS ============= */
+
+.info-stamps-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20%;
+}
+
+.agendamento-stamp-container, .horario-stamp-container, .reserva-stamp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stamp-image {
+  height: 167px;
+  width: 167px;
+}
+
+.stamp-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2B8E91;
+  
+  max-width: 15ch;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ============= RIGHT LOGIN FORM ============= */
+
+.login-form-container {
+  margin-left: 3.8%;
+  padding-right: 10.5%;
+  padding-bottom: 4.5%;
+  width: 50%;
+}
+
+/* ============= FORM TITLE ============= */
+
+.form-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 9vh;
+}
+
+.form-main-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.form-sub-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #525252;
+}
+
+/* ============= FORM ============= */
+
+.login-form {
+  margin-top: 13%;
+}
+
+.login-input-container {
+  margin-bottom: 2.5rem;
+}
+
+.login-form-label, .login-form-input {
+  display: block;
+}
+
+.login-form-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.login-form-input {
+  font-size: 1.4rem;
+  padding: 2.5% 1.5%;
+  margin-top: 5px;
+  width: 100%;
+
+  border: solid 1px #525252;
+  border-radius: 6px;
+}
+
+.login-form-btn {
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #2B8E91;
+  cursor: pointer;
+
+  padding: 0.7em 0;
+  width: 100%;
+}
+
+/* ============= CHECKBOX CONTAINER ============= */
+
+.underbutton-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1.5rem 1rem 0 1rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.login-form-checkbox {
+  margin-right: 5px;
+}
+
+.checkbox-text, .forgot-password {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #525252;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-top: 13%;
+}
+
+/* ============= SIGN UP LINE ============= */
+
+.signup-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #16688D;
+
+  margin-top: 3px;
+}
+
+.signup-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #16688D;
+
+  margin-top: 3px;
+}
+
+/* ============= FACEBOOK AND GOOGLE AUTH ============= */
+
+.auth-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-top: 8%;
+}
+
+.auth-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  flex: 1;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  margin: 0 1rem;
+}
+
+.facebook-btn {
+  background-color: #3F51B5;
+}
+
+.google-btn {
+  background-color: #4c87ef;
+}
+
+.google-icon {
+  background-color: #FFF;
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ============= FOOTER ============= */
+
+div.options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 260px;
+  padding-right: 135px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+div.copyright{
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+p{
+  color: #ffffff;
+}
+
+footer p.listTitle{
+  font-weight: bold;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a#seeAll{
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay{
+  height: 35px;
+  width: 117px;
+}

@@ -1,0 +1,141 @@
+/********HEADER***********/
+
+div.optionsHeader{
+    font-size: 15px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:  2fr 1.5fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+div.optionsHeader a {
+    text-decoration: none;
+    color: #000000;
+}
+  
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 33px;
+    margin-left: 70px;
+}
+
+/********FOOTER*******/
+div.options{
+    background-color: #525252;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 260px;
+    padding-right: 135px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+div.copyright{
+    background-color: #363636;
+    color: #ADADAD;
+    font-size: 14px;
+    padding: 16px;
+    text-align: center;
+}
+
+p{
+    color: #ffffff;
+}
+
+footer p.listTitle{
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a#seeAll{
+    color: #86B9FF;
+    font-style: italic;
+}
+img#imgGooglePlay{
+    height: 35px;
+    width: 117px;
+}
+
+/******PAGE******/
+#benefitsTitle{
+    color: #86B9FF;
+    font-size: 40px;
+    line-height: 45px;
+    width: 37%;
+    font-weight: bold;
+}
+
+section#benefits{
+    background: transparent url('img/Group 579.png') 0% 0% no-repeat padding-box;
+    padding-left: 8.6%;
+    padding-top: 6.5%;
+}
+
+p#benefitsSubtitle{
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    
+}
+
+p#benefitsText{
+    color: #86B9FF;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: bold;
+    width: 35%;
+}
+
+section#scheduling{
+    padding-top: 4%;
+    height: 600px;
+    margin-bottom: 14%;
+}
+
+p#schedulingTitle{
+    text-align: center;
+    color: #1560A0;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: bold;
+}
+
+p#schedulingSubtitle{
+    text-align: center;
+    font-weight: medium;
+    font-size: 19px;
+    line-height: 23px;
+    color: #525252;
+}
+
+div#responsiveWebsite{
+    padding-left: 20%;
+    padding-top: 9%;
+    width: 43%;
+    float: left;
+}
+
+p#responsiveWebsiteTitle{
+    color: #16688D;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+}
+div#responsiveWebsiteImage{
+    float:right;
+    padding-right: 12%;
+}
+
+p#responsiveWebsiteText{
+    font-size: 20px;
+    line-height: 24px;
+    color: #525252;
+}

@@ -1,0 +1,86 @@
+/* ============= MEDIA QUERIES ============= */
+
+@media (max-width: 1440px) {
+  header {
+    padding: 20px 1% 15px 1%;
+  }
+
+  #medicalGroup {
+    position: absolute;
+    right: 30px;
+    top: 12.6%;
+    width: 530px;
+  }
+
+  section#sectionSearch ul li{
+    font-size: 21px;
+    color: #ffffff;
+    display: block;
+  }
+
+  section#sectionSearch ul{
+      display: block;
+      margin: 10px 0 30px 10px;
+  }
+
+  .search {
+    max-width: 70%;
+  }
+
+  /* ============= MEDICAL SPECIALTIES ============= */
+
+  div.specialties{
+    padding: 0 10%;
+  }
+
+  /* ============= SCHEDULING TUTORIAL ============= */
+
+  section#schedulingTutorial{
+    padding: 0 10%;
+  }
+
+  /* ============= SPECIALTIES DETAILS ============= */
+
+  section#specialtiesDetails{
+    gap: 5%;
+    padding: 6% 10%;
+  }
+
+  /* ============= SOME SPECIALTIES ============= */
+
+  section#someSpecialties{
+    padding: 2% 10%;
+  }
+
+  /* ============= ONLINE SCHEDULING ============= */
+
+  #onlineScheduling {
+    padding: 2% 10%;
+  }
+
+  /* ============= NEW PROFESSIONALS ============= */
+
+  section#newProfessionals{
+    padding: 4% 10% 0 7%;
+  }
+
+  #newProfessionalsPic {
+    max-width: 700px;
+  }
+
+  /* ============= TESTIMONIAL ============= */
+
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logotype img {
+    width: 200px;
+  }
+
+  div.options {
+    font-size: 1.2rem;
+  }
+}

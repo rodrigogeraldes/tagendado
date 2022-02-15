@@ -1,0 +1,263 @@
+/* ============= HEADER ============= */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 10.5%;
+
+  background-color: #1560A0;
+  color: #FFF;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  margin: 0 20px;
+}
+
+.search-input {
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  flex: 1;
+
+  font-size: 1.4rem;
+  padding: 1.6rem 2rem;
+  margin: 0 8px;
+}
+
+.search-form .radio-label {
+  font-size: 1.5rem;
+}
+
+.radio-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-search {
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  padding: 1em 2em;
+  margin-left: 1rem;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #9BD30F;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-container .user-auth-button {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.4rem;
+}
+
+.user-container p {
+  font-size: 1.4rem;
+  margin: 0 0.5rem
+}
+
+/* ============= MAIN ============= */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-identifier {
+  color: #8D8D8D;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* ============= LEFT INFO CONTAINER ============= */
+
+.ask-info-container {
+  padding: 2.2% 1.5% 2.2% 10.5%;
+  background-color: #F4F4F4;
+  max-width: 55%;
+}
+
+.ask-info-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000000;
+
+  margin-top: 9%;
+}
+
+/* ============= MAIN CONTAINER (IMAGE AND TEXT) ============= */
+
+.main-info-container {
+  display: flex;
+
+  margin-top: 10.5%;
+}
+
+.info-text-container {
+  margin-left: 2rem;
+}
+
+.info-text-subtitle {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #2B8E91;
+
+  margin-top: 15%;
+  margin-bottom: 25%;
+}
+
+.info-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* ============= RIGHT FORM CONTAINER ============= */
+
+.ask-form-container {
+  flex: 1;
+
+  padding-right: 10.5%;
+  padding-top: 7.5%;
+}
+
+.ask-form {
+  margin-left: 10.5%;
+}
+
+/* ============= INPUTS CONTAINER ============= */
+
+.ask-input-container {
+  margin-bottom: 2.5rem;
+}
+
+.ask-input-label, .ask-form-input {
+  display: block;
+}
+
+.ask-input-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.ask-form-input {
+  font-size: 1.4rem;
+  padding: 2.5% 1.5%;
+  margin-top: 5px;
+  width: 100%;
+
+  border: solid 1px #525252;
+  border-radius: 6px;
+}
+
+/* ============= CHECKBOX AND BUTTON ============= */
+
+.form-bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2.5rem;
+}
+
+.checkbox-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+
+  margin-left: 5px;
+}
+
+.ask-form-btn {
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #2B8E91;
+  cursor: pointer;
+
+  padding: 1em 1.4em;
+}
+
+/* ============= FOOTER ============= */
+
+div.options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 260px;
+  padding-right: 135px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+div.copyright{
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+p{
+  color: #ffffff;
+}
+
+footer p.listTitle{
+  font-weight: bold;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a#seeAll{
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay{
+  height: 35px;
+  width: 117px;
+}
+
+/* ============= MEDIA QUERIES ============= */
+
+@media (max-width: 1480px) {
+  .header {
+    padding: 20px 6%;
+  }
+
+  .ask-info-container {
+    padding: 2.2% 1.5% 2.2% 6%;
+  }
+
+  .ask-form-container {
+    padding-right: 6%;
+  }
+}

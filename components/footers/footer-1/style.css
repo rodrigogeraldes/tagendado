@@ -1,0 +1,46 @@
+div.options{
+    background-color: #525252;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 13.5%;
+    padding-right: 7%;
+    line-height: 25px;
+    font-size: 15px;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+}
+
+div.copyright{
+    background-color: #363636;
+    color: #ADADAD;
+    font-size: 14px;
+    padding: 16px;
+    text-align: center;
+}
+
+p{
+    color: #ffffff;
+}
+
+footer p.listTitle{
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a#seeAll{
+    color: #86B9FF;
+    font-style: italic;
+}
+img#imgGooglePlay{
+    height: 46px;
+    width: 156px;
+}

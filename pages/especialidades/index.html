@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Augusto Araujo, Wesley Ferreira, Rodrigo Geraldes" />
+
+    <!--Links para a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icons script -->
+    <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="../../components/headers/header-2/img/logo.png" class="logo" alt="Logo" />
+      
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
+        <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
+
+        <div class="radio-input-container">
+          <div>
+            <input type="radio" id="particular" name="tipo-pagamento">
+            <label for="particular" class="radio-label">Particular</label>
+          </div>
+          <div>
+            <input type="radio" id="convenio" name="tipo-pagamento">
+            <label for="convenio" class="radio-label">Convênio</label>
+          </div>
+        </div>
+
+        <button class="btn-search">PESQUISAR</button>
+      </form>
+
+      <div class="user-container">
+        <img src="../../components/headers/header-2/img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#" class="user-auth-button">CADASTRE-SE</a>
+        <p>/</p>
+        <a href="#" class="user-auth-button">LOGIN</a>
+      </div>
+    </header>
+
+    <section class="filter-container">
+      <h3 class="text-filtered-by">Ginecologista em São Paulo: 25 Resultados</h3>
+
+      <h4 class="title-filter-by">Filtrar por</h4>
+      <form class="filter-form">
+        <input type="text" class="filter-form-input" placeholder="Digite a Especialidade">
+
+        <input list="convenios" class="filter-form-input dropdown-input" placeholder="Escolha o Convênio">
+        <datalist id="convenios">
+          <option value="Unimed">
+          <option value="NotreDame">
+          <option value="Particular">
+        </datalist>
+
+        <input list="cidades" class="filter-form-input dropdown-input" placeholder="Cidade">
+        <datalist id="cidades">
+          <option value="Arujá">
+          <option value="Guarulhos">
+          <option value="São Paulo">
+        </datalist>
+
+        <button class="filter-form-btn">FILTRAR</button>
+      </form>
+    </section>
+
+    <main class="main">
+      <section class="doctor-cards-section">
+        <div class="doctor-card-container">
+          <div class="doctor-info-container">
+            <div class="doctor-info">
+              <div class="doctor-image-container">
+                <img src="./img/doctor-photo.png" alt="Imagem do doutor" class="doctor-image">
+              </div>
+  
+              <div class="info">
+                <h2 class="doctor-name">Dr. Alberto Lian</h2>
+                <h4 class="doctor-specialties">Clínico Geral, Nutrólogo, Clínico Obesidade, Psicanalista, Psiquiatra, Ginecologista, Obstetra, Pediatra, Gastroenterologista, Endocrinologista</h4>
+                <div class="doctor-rating">
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="far fa-star fa-2x rating-star-empty"></i>
+                  <h5 class="rating-counter">158 opiniões</h5>
+                </div>
+              </div>
+            </div>
+  
+            <div class="doctor-address">
+              <div class="address-title">
+                <button class="address-title-btn btn-on">Consultório</button>
+                <button class="address-title-btn">Telemedicina</button>
+              </div>
+  
+              <div class="address-info">
+                <span>Rua Vergueiro, 1855, conj 95</span>
+                <span>Vila Mariana</span>
+                <span>São Paulo - SP</span>
+                <span>CEP 04101-904</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-schedule-container">
+            <div class="schedule-grid-container">
+              <i class="fas fa-chevron-left fa-lg arrow-icon arrow-disable" style="margin-right: 1rem;"></i>
+  
+              <div class="doctor-schedule-grid">
+  
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Hoje</h2>
+                    <h3 class="day-title-date">20 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Amanhã</h2>
+                    <h3 class="day-title-date">21 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Quinta</h2>
+                    <h3 class="day-title-date">22 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sexta</h2>
+                    <h3 class="day-title-date">23 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sábado</h2>
+                    <h3 class="day-title-date">24 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                </div>
+  
+              </div>
+  
+              <i class="fas fa-chevron-right fa-lg arrow-icon" style="margin-left: 1rem;"></i>
+            </div>
+            <div class="open-schedule-container">
+              <button class="open-schedule-btn">Veja todos os horários</button>
+              <i class="fas fa-chevron-down fa-lg arrow-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card-container">
+          <div class="doctor-info-container">
+            <div class="doctor-info">
+              <div class="doctor-image-container">
+                <img src="./img/doctor-photo.png" alt="Imagem do doutor" class="doctor-image">
+              </div>
+  
+              <div class="info">
+                <h2 class="doctor-name">Dr. Alberto Lian</h2>
+                <h4 class="doctor-specialties">Clínico Geral, Nutrólogo, Clínico Obesidade, Psicanalista, Psiquiatra, Ginecologista, Obstetra, Pediatra, Gastroenterologista, Endocrinologista</h4>
+                <div class="doctor-rating">
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="far fa-star fa-2x rating-star-empty"></i>
+                  <h5 class="rating-counter">158 opiniões</h5>
+                </div>
+              </div>
+            </div>
+  
+            <div class="doctor-address">
+              <div class="address-title">
+                <button class="address-title-btn btn-on">Consultório</button>
+                <button class="address-title-btn">Telemedicina</button>
+              </div>
+  
+              <div class="address-info">
+                <span>Rua Vergueiro, 1855, conj 95</span>
+                <span>Vila Mariana</span>
+                <span>São Paulo - SP</span>
+                <span>CEP 04101-904</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-schedule-container">
+            <div class="schedule-grid-container">
+              <i class="fas fa-chevron-left fa-lg arrow-icon arrow-disable" style="margin-right: 1rem;"></i>
+  
+              <div class="doctor-schedule-grid">
+  
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Hoje</h2>
+                    <h3 class="day-title-date">20 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Amanhã</h2>
+                    <h3 class="day-title-date">21 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Quinta</h2>
+                    <h3 class="day-title-date">22 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sexta</h2>
+                    <h3 class="day-title-date">23 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sábado</h2>
+                    <h3 class="day-title-date">24 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                </div>
+  
+              </div>
+  
+              <i class="fas fa-chevron-right fa-lg arrow-icon" style="margin-left: 1rem;"></i>
+            </div>
+            <div class="open-schedule-container">
+              <button class="open-schedule-btn">Veja todos os horários</button>
+              <i class="fas fa-chevron-down fa-lg arrow-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card-container">
+          <div class="doctor-info-container">
+            <div class="doctor-info">
+              <div class="doctor-image-container">
+                <img src="./img/doctor-photo.png" alt="Imagem do doutor" class="doctor-image">
+              </div>
+  
+              <div class="info">
+                <h2 class="doctor-name">Dr. Alberto Lian</h2>
+                <h4 class="doctor-specialties">Clínico Geral, Nutrólogo, Clínico Obesidade, Psicanalista, Psiquiatra, Ginecologista, Obstetra, Pediatra, Gastroenterologista, Endocrinologista</h4>
+                <div class="doctor-rating">
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="far fa-star fa-2x rating-star-empty"></i>
+                  <h5 class="rating-counter">158 opiniões</h5>
+                </div>
+              </div>
+            </div>
+  
+            <div class="doctor-address">
+              <div class="address-title">
+                <button class="address-title-btn btn-on">Consultório</button>
+                <button class="address-title-btn">Telemedicina</button>
+              </div>
+  
+              <div class="address-info">
+                <span>Rua Vergueiro, 1855, conj 95</span>
+                <span>Vila Mariana</span>
+                <span>São Paulo - SP</span>
+                <span>CEP 04101-904</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-schedule-container">
+            <div class="schedule-grid-container">
+              <i class="fas fa-chevron-left fa-lg arrow-icon arrow-disable" style="margin-right: 1rem;"></i>
+  
+              <div class="doctor-schedule-grid">
+  
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Hoje</h2>
+                    <h3 class="day-title-date">20 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Amanhã</h2>
+                    <h3 class="day-title-date">21 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Quinta</h2>
+                    <h3 class="day-title-date">22 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sexta</h2>
+                    <h3 class="day-title-date">23 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sábado</h2>
+                    <h3 class="day-title-date">24 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                </div>
+  
+              </div>
+  
+              <i class="fas fa-chevron-right fa-lg arrow-icon" style="margin-left: 1rem;"></i>
+            </div>
+            <div class="open-schedule-container">
+              <button class="open-schedule-btn">Veja todos os horários</button>
+              <i class="fas fa-chevron-down fa-lg arrow-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-card-container">
+          <div class="doctor-info-container">
+            <div class="doctor-info">
+              <div class="doctor-image-container">
+                <img src="./img/doctor-photo.png" alt="Imagem do doutor" class="doctor-image">
+              </div>
+  
+              <div class="info">
+                <h2 class="doctor-name">Dr. Alberto Lian</h2>
+                <h4 class="doctor-specialties">Clínico Geral, Nutrólogo, Clínico Obesidade, Psicanalista, Psiquiatra, Ginecologista, Obstetra, Pediatra, Gastroenterologista, Endocrinologista</h4>
+                <div class="doctor-rating">
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="fas fa-star fa-2x rating-star"></i>
+                  <i class="far fa-star fa-2x rating-star-empty"></i>
+                  <h5 class="rating-counter">158 opiniões</h5>
+                </div>
+              </div>
+            </div>
+  
+            <div class="doctor-address">
+              <div class="address-title">
+                <button class="address-title-btn btn-on">Consultório</button>
+                <button class="address-title-btn">Telemedicina</button>
+              </div>
+  
+              <div class="address-info">
+                <span>Rua Vergueiro, 1855, conj 95</span>
+                <span>Vila Mariana</span>
+                <span>São Paulo - SP</span>
+                <span>CEP 04101-904</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-schedule-container">
+            <div class="schedule-grid-container">
+              <i class="fas fa-chevron-left fa-lg arrow-icon arrow-disable" style="margin-right: 1rem;"></i>
+  
+              <div class="doctor-schedule-grid">
+  
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Hoje</h2>
+                    <h3 class="day-title-date">20 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Amanhã</h2>
+                    <h3 class="day-title-date">21 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Quinta</h2>
+                    <h3 class="day-title-date">22 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <button class="time-available">14:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sexta</h2>
+                    <h3 class="day-title-date">23 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">11:00</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <button class="time-available">09:30</button>
+                  <button class="time-available">09:30</button>
+                </div>
+                <div class="schedule-day">
+                  <div class="day-title-container">
+                    <h2 class="day-title-weekday">Sábado</h2>
+                    <h3 class="day-title-date">24 Jul</h3>
+                  </div>
+                  <button class="time-available">09:30</button>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                  <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                </div>
+  
+              </div>
+  
+              <i class="fas fa-chevron-right fa-lg arrow-icon" style="margin-left: 1rem;"></i>
+            </div>
+            <div class="open-schedule-container">
+              <button class="open-schedule-btn">Veja todos os horários</button>
+              <i class="fas fa-chevron-down fa-lg arrow-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <nav class="pagination-container">
+          <ul class="pagination">
+            <a href=""><li class="page-item on">1</li></a>
+            <a href="#"><li class="page-item">2</li></a>
+            <a href="#"><li class="page-item">3</li></a>
+            <a href="#"><li class="page-item">4</li></a>
+            <a href="#"><li class="page-item">5</li></a>
+            <a href="#"><li class="page-item">Próximo</li></a>
+          </ul>
+        </nav>
+      </section>
+
+      <aside class="map-container">
+        <img src="./img/map-exemple.png" alt="Mapa">
+      </aside>
+    </main>
+
+    <footer>
+      <div class="options">
+        <div class="pacientOptions">
+          <p class="listTitle">Pacientes</p>
+          <br/>
+          <a href="#">Especialistas</a>
+          <br/>
+          <a href="#">Clínicas e Hospitais</a>
+          <br/>
+          <a href="#">Pergunte ao especialista</a>
+          <br/>
+          <a href="#">Medicamentos</a>
+          <br/>
+          <a href="#">Serviços</a>
+          <br/>
+          <a href="#">Perguntas frequentes</a>
+          <br/>
+          <a href="#">Aplicações móveis</a>
+          <br/>
+          <a href="#">Diagnósticos por imagem</a>
+          <br/>
+
+        </div>
+        <div class="specialistOptions">
+          <p class="listTitle">Especialistas da saúde</p>
+          <br/>
+          <a href="#">Ginecologista</a>
+          <br/>
+          <a href="#">Psiquiatria</a>
+          <br/>
+          <a href="#">Clínico Geral</a>
+          <br/>
+          <a href="#">Endoscopista</a>
+          <br/>
+          <a href="#">Oftalmologista</a>
+          <br/>
+          <a href="#">Dentista</a>
+          <br/>
+          <a href="#">Cirurgião</a>
+          <br/>
+          <a href="#" id="seeAll">+ Veja todos</a>
+
+        </div>
+        <div class="aboutUs">
+          <p class="listTitle">Sobre nós</p>
+          <br/>
+          <a href="#">Quem somos</a>
+          <br/>
+          <a href="#">Privacidade e Cookies</a>
+          <br/>
+          <a href="#">Termos e condições</a>
+          <br/>
+          <br/>
+          <p class="listTitle">Baixe o app</p>
+          <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
+          <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+        </div>
+        <div class="contactInfos">
+          <img src="../../components/footers/footer-1/img/Logo.svg" alt="Logo tagendado">
+          <br/>
+          <p>Telefone</p>
+          <p>+55 (11) 98273-1096</p>
+          <br/>
+          <p>Email:</p>
+          <p>contato@tagendado.com</p>
+          <br>
+          <p>Endereço</p>
+          <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+          <p>São Paulo/SP - CEP 01311-200</p>                
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Tagendado © 2021 - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>

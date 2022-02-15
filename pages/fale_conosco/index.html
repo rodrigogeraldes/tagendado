@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Augusto Araujo, Wesley Ferreira, Rodrigo Geraldes" />
+
+    <!--Links para a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="../../components/headers/header-2/img/logo.png" class="logo" alt="Logo" />
+      
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
+        <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
+
+        <div class="radio-input-container">
+          <div>
+            <input type="radio" id="particular" name="tipo-pagamento">
+            <label for="particular" class="radio-label">Particular</label>
+          </div>
+          <div>
+            <input type="radio" id="convenio" name="tipo-pagamento">
+            <label for="convenio" class="radio-label">Convênio</label>
+          </div>
+        </div>
+
+        <button class="btn-search">PESQUISAR</button>
+      </form>
+
+      <div class="user-container">
+        <img src="../../components/headers/header-2/img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#" class="user-auth-button">CADASTRE-SE</a>
+        <p>/</p>
+        <a href="#" class="user-auth-button">LOGIN</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="left-container">
+        <small class="page-identifier">Home > Fale Conosco</small>
+
+        <h1 class="page-title">Fale Conosco</h1>
+
+        <div class="left-main-content">
+          <img src="./img/Path_839.svg" class="img-attendant" alt="Imagem de atendente" >
+
+          <div class="text-content-container">
+            <div>
+              <h2 class="text-content-title"><strong>Dúvidas ou Sugestões</strong></h2>
+              <h3 class="text-content">Dúvidas ou Sugestões Envie um e-mail para contato@tagendado.com</h3>
+            </div>
+
+            <div>
+              <h2 class="text-content-title"><strong>Quer sua clínica ou consultório no Tagendado?</strong></h2>
+              <h3 class="text-content">Envie um e-mail para comercial@tagendado.com ou ligue +55 (11) 3280-3950</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-container">
+        <form class="costumer-service-form">
+          <label for="" class="form-label">Nome*</label>
+          <input type="text" class="costumer-service-input" placeholder="Digite seu nome" />
+
+          <label for="" class="form-label">E-mail*</label>
+          <input type="text" class="costumer-service-input" placeholder="Digite seu e-mail" />
+
+          <label for="" class="form-label">Telefone/Celular*</label>
+          <input type="text" class="costumer-service-input" placeholder="Telefone/Celular" />
+
+          <label for="" class="form-label">Mensagem*</label>
+          <textarea type="text" class="costumer-service-input" rows="4" placeholder="Comentário"></textarea>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" class="checkbox">
+            <h3 class="checkbox-text">Aceito os Termos e condições de Uso</h3>
+          </div>
+
+          <button class="costumer-service-btn">ENVIAR A PERGUNTA</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="options">
+        <div class="pacientOptions">
+          <p class="listTitle">Pacientes</p>
+          <br/>
+          <a href="#">Especialistas</a>
+          <br/>
+          <a href="#">Clínicas e Hospitais</a>
+          <br/>
+          <a href="#">Pergunte ao especialista</a>
+          <br/>
+          <a href="#">Medicamentos</a>
+          <br/>
+          <a href="#">Serviços</a>
+          <br/>
+          <a href="#">Perguntas frequentes</a>
+          <br/>
+          <a href="#">Aplicações móveis</a>
+          <br/>
+          <a href="#">Diagnósticos por imagem</a>
+          <br/>
+
+        </div>
+        <div class="specialistOptions">
+          <p class="listTitle">Especialistas da saúde</p>
+          <br/>
+          <a href="#">Ginecologista</a>
+          <br/>
+          <a href="#">Psiquiatria</a>
+          <br/>
+          <a href="#">Clínico Geral</a>
+          <br/>
+          <a href="#">Endoscopista</a>
+          <br/>
+          <a href="#">Oftalmologista</a>
+          <br/>
+          <a href="#">Dentista</a>
+          <br/>
+          <a href="#">Cirurgião</a>
+          <br/>
+          <a href="#" id="seeAll">+ Veja todos</a>
+
+        </div>
+        <div class="aboutUs">
+          <p class="listTitle">Sobre nós</p>
+          <br/>
+          <a href="#">Quem somos</a>
+          <br/>
+          <a href="#">Privacidade e Cookies</a>
+          <br/>
+          <a href="#">Termos e condições</a>
+          <br/>
+          <br/>
+          <p class="listTitle">Baixe o app</p>
+          <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
+          <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+        </div>
+        <div class="contactInfos">
+          <img src="../../components/footers/footer-1/img/Logo.svg" alt="Logo tagendado">
+          <br/>
+          <p>Telefone</p>
+          <p>+55 (11) 98273-1096</p>
+          <br/>
+          <p>Email:</p>
+          <p>contato@tagendado.com</p>
+          <br>
+          <p>Endereço</p>
+          <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+          <p>São Paulo/SP - CEP 01311-200</p>                
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Tagendado © 2021 - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>

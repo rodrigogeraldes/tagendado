@@ -1,0 +1,238 @@
+/* ============= HEADER ============= */
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 10.5%;
+
+    background-color: #1560A0;
+    color: #FFF;
+  }
+
+  .search-form {
+    display: flex;
+    justify-content: space-evenly;
+
+    min-width: 65%;
+
+    min-height: 3rem;
+  }
+
+  .search-input {
+    border: none;
+    border-radius: 10px;
+    
+    width: 28%;
+    max-height: 5rem;
+
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    margin: 0 0.2rem;
+  }
+
+  .search-form .radio-label {
+    font-size: 1.5rem;
+  }
+
+  .radio-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+  }
+
+  .btn-search {
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    padding: 1em 3em;
+
+    cursor: pointer;
+    color: #FFF;
+    background-color: #9BD30F;
+  }
+
+  .user-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-container .user-auth-button {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.4rem;
+  }
+
+  .user-container p {
+    font-size: 1.4rem;
+    margin: 0 0.5rem
+  }
+
+/* ============= MAIN ============= */
+
+.main {
+  display: flex;
+}
+
+.left-container {
+  padding: 2% 0;
+  padding-left: 10.5%;
+
+  max-width: 56%;
+
+  background-color: #F4F4F4;
+}
+
+.right-container {
+  padding: 2% 0;
+  padding-left: 4%;
+
+  max-width: 34%;
+
+  display: flex;
+  justify-self: flex-end;
+}
+
+/* Indicador da pagina (topo à esquerda) */
+
+.page-identifier {
+  font-size: 1.4rem;
+  color: #8D8D8D;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  margin-top: 5%;
+}
+
+.left-main-content {
+  margin-top: 5%;
+
+  display: flex;
+}
+
+.text-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 10% 7% 10% 2%;
+}
+
+.text-content-title {
+  color: #2B8E91;
+  font-size: 2rem;
+}
+
+.text-content {
+  color: #525252;
+  font-size: 1.5rem;
+}
+
+/* Formulário à direita */
+
+.costumer-service-form {
+  margin-top: 12%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.costumer-service-input {
+  border: #525252 solid 1px;
+  border-radius: 6px;
+  
+  width: 30vw;
+
+  font-size: 1.4rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+.checkbox-text {
+  font-size: 1.6rem;
+}
+
+.costumer-service-btn {
+  border: none;
+  border-radius: 1rem;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+
+  padding: 1em 1.5em;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #2B8E91;
+}
+
+/* ============= FOOTER ============= */
+
+div.options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 260px;
+  padding-right: 135px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+div.copyright{
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+p{
+  color: #ffffff;
+}
+
+footer p.listTitle{
+  font-weight: bold;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a#seeAll{
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay{
+  height: 35px;
+  width: 117px;
+}

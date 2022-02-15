@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Augusto Araujo, Wesley Ferreira, Rodrigo Geraldes" />
+
+    <!--Links para a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="../../global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/logo.png" class="logo" alt="Logo" />
+      
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
+        <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
+
+        <div class="radio-input-container">
+          <div>
+            <input type="radio" id="particular" name="tipo-pagamento">
+            <label for="particular" class="radio-label">Particular</label>
+          </div>
+          <div>
+            <input type="radio" id="convenio" name="tipo-pagamento">
+            <label for="convenio" class="radio-label">Convênio</label>
+          </div>
+        </div>
+
+        <button class="btn-search">PESQUISAR</button>
+      </form>
+
+      <div class="user-container">
+        <img src="./img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#" class="user-auth-button">CADASTRE-SE</a>
+        <p>/</p>
+        <a href="#" class="user-auth-button">LOGIN</a>
+      </div>
+    </header>
+    <section id="createAccount">
+        <div id="createAccountForm">
+            <p id="createAccountLocation">Home > Crie sua conta</p>
+            <br><br>
+            <p id="createAccountTitle">Crie sua conta</p>
+            <br>
+            <form action="" >
+
+              <div class="form-group">
+                <label for="name">Nome Completo*:<br>
+                  <input type="text" placeholder="Digite seu nome" id="name" class="formInputs border"/>
+                </label>
+                <label for="cpf">CPF*:<br>
+                  <input type="text" placeholder="Digite seu CPF" id="cpf" class="formInputs border"/>
+                </label>
+              </div>
+
+              <div class="form-group">
+
+                <div class="input-subgroup" style="width: 34.5%;">
+
+                  <label for="genero">Gênero*:<br>
+                    <select name="genero" id="genero" style="height: 51px;" class="border">
+                      <option value="selecione" disabled selected style="color: #A8A8A8;">Selecione</option>
+                      <option value="masculino">Masculino</option>
+                      <option value="feminino">Feminino</option>
+                      <option value="outro">Outro</option>
+                    </select>
+                  </label>
+
+                  <label for="dataNascimento">Data de Nascimento*:<br>
+                    <input type="text" placeholder="DD/MM/AA" id="dataNascimento" style="height: 47px; width: 182%; margin-left: 20px;" class="border"/>
+                  </label> 
+
+                </div>
+
+                <label for="cep">CEP*:<br>
+                  <input type="text" placeholder="Digite seu CEP" id="cep" class="formInputs border"/>
+                </label>
+
+              </div>
+
+              <div class="form-group"> 
+
+                <label for="endereco">Endereço*:<br>
+                  <input type="text" placeholder="Digite seu endereço" id="endereco" class="formInputs border"/>
+                </label>  
+                
+                <label for="complemento">Complemento*:<br>
+                  <input type="text" placeholder="Apto, casa, fundos, etc." id="complemento" class="formInputs border"/>
+                </label>
+
+              </div> 
+
+              <div class="form-group"> 
+              
+                <label for="complemento">Bairro*:<br>
+                  <input type="text" placeholder="Bairro" id="bairro" class="formInputs border"/>
+                </label>
+
+                <div class="input-subgroup" style="margin-left: 59px;">
+
+                  <label for="cidade" style="width: 81%;">Cidade*:<br>
+                    <input type="text" placeholder="Digite sua cidade" id="cidade" class="formInputs border" style="width: 100%;"/>
+                  </label>
+
+                  <label for="estado" style="margin-left: 14px; ">Estado*:<br>
+                    <select name="estado" id="estado" style="width: 98px; height: 51px;" class="border">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                  </label>
+                </div>
+              </div>  
+
+              <div class="form-group"> 
+                
+                <label for="estado">Estado*:<br>
+                  <input type="text" placeholder="Digite seu estado" id="estado" class="formInputs border"/>
+                </label>
+
+                
+                <label for="telefone" style="margin-left: 4.2%;">Telefone para contato*:<br>
+                  <input type="text" placeholder="DDD" id="telefone" class="formInputs border" style="width: 100px;"/>
+                  <input type="text" placeholder="Digite seu telefone" id="telefone" class="formInputs border" style="width: 538px; margin-left: 20px;" ;/>
+                </label>
+
+              </div>  
+
+                <br><br><br>
+
+                <p id="createAccountTitle">Dados para login</p>
+                <br><br>
+
+                <div class="form-group">
+
+                  <label for="email">E-mail*:<br>
+                    <input type="text" placeholder="Digite seu e-mail" id="email" class="formInputs border"/>
+                  </label>
+
+                  <div class="input-subgroup" style="margin-left: 59px;">
+
+                    <label for="senha">Senha*:<br>
+                      <input type="password" placeholder="Digite sua senha" id="senha" class="formInputs border password"/>
+                    </label>  
+
+                    <label for="senhaConfirma">Confirme sua senha*:<br>
+                      <input type="password" placeholder="Confirme sua senha" id="senhaConfirma" class="formInputs border password"/>
+                    </label>
+
+                  </div>
+                
+                </div>
+                
+                <br><br>
+
+                <label for="terms">
+                  <input type="checkbox" name="checkboxTerm" id="checkboxTerm" style="font-size: 16px;"/> Aceito os 
+                  <a href="#" style="text-decoration: underline; color: #000000;">Termos e condições de Uso</a> 
+                </label>
+
+                <br><br>
+
+              <input type="button" value="FAZER CADASTRO" id="registerButton">
+              <br><br><br><br>
+              </form>
+        </div>  
+    </section>
+    <footer>
+        <div class="options">
+            <div class="pacientOptions">
+                <p class="listTitle">Pacientes</p>
+                <br/>
+                <a href="#">Especialistas</a>
+                <br/>
+                <a href="#">Clínicas e Hospitais</a>
+                <br/>
+                <a href="#">Pergunte ao especialista</a>
+                <br/>
+                <a href="#">Medicamentos</a>
+                <br/>
+                <a href="#">Serviços</a>
+                <br/>
+                <a href="#">Perguntas frequentes</a>
+                <br/>
+                <a href="#">Aplicações móveis</a>
+                <br/>
+                <a href="#">Diagnósticos por imagem</a>
+                <br/>
+
+            </div>
+            <div class="specialistOptions">
+                <p class="listTitle">Especialistas da saúde</p>
+                <br/>
+                <a href="#">Ginecologista</a>
+                <br/>
+                <a href="#">Psiquiatria</a>
+                <br/>
+                <a href="#">Clínico Geral</a>
+                <br/>
+                <a href="#">Endoscopista</a>
+                <br/>
+                <a href="#">Oftalmologista</a>
+                <br/>
+                <a href="#">Dentista</a>
+                <br/>
+                <a href="#">Cirurgião</a>
+                <br/>
+                <a href="#" id="seeAll">+ Veja todos</a>
+
+            </div>
+            <div class="aboutUs">
+                <p class="listTitle">Sobre nós</p>
+                <br/>
+                <a href="#">Quem somos</a>
+                <br/>
+                <a href="#">Privacidade e Cookies</a>
+                <br/>
+                <a href="#">Termos e condições</a>
+                <br/>
+                <br/>
+                <p class="listTitle">Baixe o app</p>
+                <img src="img/DownloadAppStore.png" alt="Download via AppStore"/>
+                <img src="img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+            </div>
+            <div class="contactInfos">
+                <img src="img/Logo.svg" alt="Logo tagendado">
+                <br/>
+                <p>Telefone</p>
+                <p>+55 (11) 98273-1096</p>
+                <br/>
+                <p>Email:</p>
+                <p>contato@tagendado.com</p>
+                <br>
+                <p>Endereço</p>
+                <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+                <p>São Paulo/SP - CEP 01311-200</p>                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Tagendado © 2021 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+  </body>
+</html>

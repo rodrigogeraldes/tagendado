@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Augusto Araujo, Wesley Ferreira, Rodrigo Geraldes" />
+
+    <!--Links para a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="../../components/headers/header-2/img/logo.png" class="logo" alt="Logo" />
+      
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Nome, especialidade, procedimento" >
+        <input type="text" class="search-input" placeholder="Endereço, bairro, cidade" >
+
+        <div class="radio-input-container">
+          <div>
+            <input type="radio" id="particular" name="tipo-pagamento">
+            <label for="particular" class="radio-label">Particular</label>
+          </div>
+          <div>
+            <input type="radio" id="convenio" name="tipo-pagamento">
+            <label for="convenio" class="radio-label">Convênio</label>
+          </div>
+        </div>
+
+        <button class="btn-search">PESQUISAR</button>
+      </form>
+
+      <div class="user-container">
+        <img src="../../components/headers/header-2/img/person_outline_black_24dp.png" alt="Cadastro/Login">
+        <a href="#" class="user-auth-button">CADASTRE-SE</a>
+        <p>/</p>
+        <a href="#" class="user-auth-button">LOGIN</a>
+      </div>
+    </header>
+
+    <div class="page-identifier-container">
+      <small class="page-identifier">Home > Médico</small>
+    </div>
+
+    <main class="main">
+      <section class="doctor-details-container">
+
+        <div class="doctor-details-header">
+          <div class="doctor-image-container">
+            <img src="./img/doctor-photo.png" alt="Imagem do doutor">
+          </div>
+
+          <div class="doctor-header-info-container">
+            <div>
+              <h1 class="doctor-name">Dr. Alberto Lian</h1>
+              <h3 class="doctor-specialties">Clínico Geral, Nutrólogo, Clínico Obesidade, Psicanalista, Psiquiatra, Ginecologista, Obstetra, Pediatra, Gastroenterologista, Endocrinologista.</h3>
+            </div>
+          
+            <div class="doctor-header-bottom-container">
+              <div class="doctor-rating">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_black_24dp.svg" class="rating-star-empty" alt="Estrela vazia">
+                <h5 class="rating-counter">158 opiniões</h5>
+              </div>
+
+              <div class="doctor-header-buttons-container">
+                <button class="schedule-appointment-btn">AGENDE SUA CONSULTA</button>
+                <button class="see-phone-btn">VER TELEFONE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="doctor-experience-container">
+          <h2 class="doctor-experience-title">
+            Experiência Acadêmica
+          </h2>
+          <h3 class="doctor-experience-description">
+            Dr. Alberto Lian graduou-se na Universidade São Francisco em Bragança Paulista.. Possui TEGO (Título de Especialista em Ginecologia e Obstetrícia)
+          </h3>
+        </div>
+        
+        <div class="doctor-address-container">
+          <div class="doctor-address-info">
+            <h2 class="doctor-address-title">
+              Endereço
+            </h2>
+            <h3 class="doctor-address-content">Rua Vergueiro, 1855, conj 95</h3>
+            <h3 class="doctor-address-content">Vila Mariana</h3>
+            <h3 class="doctor-address-content">São Paulo - SP</h3>
+            <h3 class="doctor-address-content">CEP 04101-904</h3>
+          </div>
+
+          <div class="doctor-address-map">
+            <img src="./img/doctor-address-map.png" alt="Foto do endereço no mapa">
+          </div>
+        </div>
+
+        <div class="doctor-education-container">
+          <h2 class="doctor-education-title">
+            Formação
+          </h2>
+          <h3 class="doctor-education-description">
+            Especialização em Fisioterapia Respiratória pela Santa Casa de São Paulo
+          </h3>
+        </div>
+
+        <div class="doctor-feedback-container">
+          <h2 class="doctor-feedback-title">Opiniões dos pacientes</h2>
+          <h3 class="doctor-feedback-counter">158 opiniões</h3>
+
+          <div class="feedback-comment-container">
+            <div class="feedback-comment-header">
+              <h2 class="comment-username">
+                Henrique
+              </h2>
+
+              <div class="comment-rating">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_black_24dp.svg" class="rating-star-empty" alt="Estrela vazia">
+              </div>
+            </div>
+
+            <h4 class="comment-date">
+              22 de julho de 2018
+            </h4>
+
+            <h3 class="comment-content">
+              Ótimo atendimento. Médica super atenciosa e muito clara. Recomendo.
+            </h3>
+          </div>
+
+          <div class="feedback-comment-container">
+            <div class="feedback-comment-header">
+              <h2 class="comment-username">
+                Henrique
+              </h2>
+
+              <div class="comment-rating">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_yellow_24dp.svg" class="rating-star" alt="Estrela de avaliação">
+                <img src="./img/star_black_24dp.svg" class="rating-star-empty" alt="Estrela vazia">
+              </div>
+            </div>
+
+            <h4 class="comment-date">
+              22 de julho de 2018
+            </h4>
+
+            <h3 class="comment-content">
+              Ótimo atendimento. Médica super atenciosa e muito clara. Recomendo.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <aside class="schedule-container">
+        <div class="doctor-schedule-container">
+          <div class="schedule-grid-container">
+            <img src="./img/arrow_forward_ios_black_24dp.svg" class="arrow-icon" alt="Seta para esquerda">
+
+            <div class="doctor-schedule-grid">
+
+              <div class="schedule-day">
+                <div class="day-title-container">
+                  <h2 class="day-title-weekday">Hoje</h2>
+                  <h3 class="day-title-date">20 Jul</h3>
+                </div>
+                <button class="time-available">09:30</button>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <button class="time-available">09:30</button>
+                <button class="time-available">09:30</button>
+                <button class="time-available">09:30</button>
+              </div>
+              <div class="schedule-day">
+                <div class="day-title-container">
+                  <h2 class="day-title-weekday">Amanhã</h2>
+                  <h3 class="day-title-date">21 Jul</h3>
+                </div>
+                <button class="time-available">09:30</button>
+                <button class="time-available">11:00</button>
+                <button class="time-available">14:00</button>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <button class="time-available">09:30</button>
+              </div>
+              <div class="schedule-day">
+                <div class="day-title-container">
+                  <h2 class="day-title-weekday">Quinta</h2>
+                  <h3 class="day-title-date">22 Jul</h3>
+                </div>
+                <button class="time-available">09:30</button>
+                <button class="time-available">11:00</button>
+                <button class="time-available">14:00</button>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <button class="time-available">09:30</button>
+              </div>
+              <div class="schedule-day">
+                <div class="day-title-container">
+                  <h2 class="day-title-weekday">Sexta</h2>
+                  <h3 class="day-title-date">23 Jul</h3>
+                </div>
+                <button class="time-available">09:30</button>
+                <button class="time-available">11:00</button>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <button class="time-available">09:30</button>
+                <button class="time-available">09:30</button>
+              </div>
+              <div class="schedule-day">
+                <div class="day-title-container">
+                  <h2 class="day-title-weekday">Sábado</h2>
+                  <h3 class="day-title-date">24 Jul</h3>
+                </div>
+                <button class="time-available">09:30</button>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+                <span class="time-unavailable-container"><div class="time-unavailable"></div></span>
+              </div>
+
+            </div>
+
+            <img src="./img/arrow_forward_ios_black_24dp.svg" class="arrow-icon" alt="Seta para direita">
+          </div>
+          <div class="open-schedule-container">
+            <button class="open-schedule-btn">Veja todos os horários</button>
+            <img src="./img/arrow_forward_ios_black_24dp.svg" alt="Seta para baixo">
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="options">
+        <div class="pacientOptions">
+          <p class="listTitle">Pacientes</p>
+          <br/>
+          <a href="#">Especialistas</a>
+          <br/>
+          <a href="#">Clínicas e Hospitais</a>
+          <br/>
+          <a href="#">Pergunte ao especialista</a>
+          <br/>
+          <a href="#">Medicamentos</a>
+          <br/>
+          <a href="#">Serviços</a>
+          <br/>
+          <a href="#">Perguntas frequentes</a>
+          <br/>
+          <a href="#">Aplicações móveis</a>
+          <br/>
+          <a href="#">Diagnósticos por imagem</a>
+          <br/>
+
+        </div>
+        <div class="specialistOptions">
+          <p class="listTitle">Especialistas da saúde</p>
+          <br/>
+          <a href="#">Ginecologista</a>
+          <br/>
+          <a href="#">Psiquiatria</a>
+          <br/>
+          <a href="#">Clínico Geral</a>
+          <br/>
+          <a href="#">Endoscopista</a>
+          <br/>
+          <a href="#">Oftalmologista</a>
+          <br/>
+          <a href="#">Dentista</a>
+          <br/>
+          <a href="#">Cirurgião</a>
+          <br/>
+          <a href="#" id="seeAll">+ Veja todos</a>
+
+        </div>
+        <div class="aboutUs">
+          <p class="listTitle">Sobre nós</p>
+          <br/>
+          <a href="#">Quem somos</a>
+          <br/>
+          <a href="#">Privacidade e Cookies</a>
+          <br/>
+          <a href="#">Termos e condições</a>
+          <br/>
+          <br/>
+          <p class="listTitle">Baixe o app</p>
+          <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore"/>
+          <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" id="imgGooglePlay">
+        </div>
+        <div class="contactInfos">
+          <img src="../../components/footers/footer-1/img/Logo.svg" alt="Logo tagendado">
+          <br/>
+          <p>Telefone</p>
+          <p>+55 (11) 98273-1096</p>
+          <br/>
+          <p>Email:</p>
+          <p>contato@tagendado.com</p>
+          <br>
+          <p>Endereço</p>
+          <p>Av. Paulista, 1765 - Sala 27 - Bela Vista</p>
+          <p>São Paulo/SP - CEP 01311-200</p>                
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Tagendado © 2021 - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>

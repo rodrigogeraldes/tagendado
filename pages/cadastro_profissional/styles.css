@@ -1,0 +1,328 @@
+/* ============= HEADER ============= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 10.5%;
+
+  background-color: #1560A0;
+  color: #FFF;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  margin: 0 10px;
+}
+
+.search-input {
+  border: none;
+  border-radius: 10px;
+  flex: 1;
+
+  font-size: 1.4rem;
+  padding: 1.6rem 2rem;
+  margin: 0 8px;
+}
+
+.search-form .radio-label {
+  font-size: 1.5rem;
+}
+
+.radio-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-search {
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  padding: 1em 2em;
+  margin: 0 10px;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #9BD30F;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-container .user-auth-button {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.4rem;
+}
+
+.user-container p {
+  font-size: 1.4rem;
+  margin: 0 0.5rem
+}
+
+/* ============= MAIN ============= */
+
+.page-identifier-container {
+  margin-bottom: 60px;
+}
+
+.page-identifier {
+  color: #8D8D8D;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.professional-info-section {
+  background-color: #F0F0F0;
+
+  padding: 2.2% 14.5% 2.2% 10.5%;
+}
+
+.clinic-info-section {
+  padding: 2.2% 14.5% 2.2% 10.5%;
+}
+
+.profile-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000;
+
+  margin-bottom: 20px;
+}
+
+.profile-btn-container {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 325px;
+  margin-bottom: 40px;
+}
+
+.profile-btn-container label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+
+  margin-left: 5px;
+}
+
+.professional-form-title, .clinic-form-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #1560A0;
+
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.input-subgroup {
+  display: flex;
+  flex: 1 1;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.form-input {
+  font-size: 1.4rem;
+  padding: 15px 10px;
+  margin-top: 5px;
+  
+
+  border: solid 1px #525252;
+  border-radius: 6px;
+}
+
+.dropdown-input::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background-image: url("./img/arrow_forward_ios_black_24dp.svg");
+}
+
+.phone-input-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #525252;
+
+  margin-top: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.checkbox-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+
+  margin-left: 5px;
+}
+
+.form-btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #9BD30F;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 1.2em 8em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+div.options{
+  background-color: #525252;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 13.5%;
+  padding-right: 7%;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+div.copyright{
+  background-color: #363636;
+  color: #ADADAD;
+  font-size: 14px;
+  padding: 16px;
+  text-align: center;
+}
+
+p{
+  color: #ffffff;
+}
+
+footer p.listTitle{
+  font-weight: bold;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a#seeAll{
+  color: #86B9FF;
+  font-style: italic;
+}
+img#imgGooglePlay{
+  height: 46px;
+  width: 156px;
+}
+
+/* ============= MEDIA QUERIES ============= */
+
+@media (max-width: 1460px) {
+  .header {
+    padding: 20px 6%;
+  }
+
+  .professional-info-section {
+    padding: 2.2% 10% 2.2% 6%;
+  }
+
+  .clinic-info-section {
+    padding: 2.2% 10% 2.2% 6%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 15px 5%;
+  }
+
+  .professional-info-section {
+    padding: 2.2% 5% 2.2% 5%;
+  }
+  
+  .clinic-info-section {
+    padding: 2.2% 5% 2.2% 5%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .header {
+    padding: 10px 1%;
+  }
+
+  .logo {
+    max-height: 45px;
+  }
+
+  .search-input {
+    padding: 1.4rem 1.4rem;
+  }
+
+  .btn-search {
+    padding: 1em 1.5em;
+  }
+
+  .professional-info-section {
+    padding: 2.2% 3% 2.2% 3%;
+  }
+  
+  .clinic-info-section {
+    padding: 2.2% 3% 2.2% 3%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .btn-search {
+    padding: 1em 1.2em;
+    margin: 0 5px;
+
+    font-size: 1.2rem;
+  }
+
+  .search-form .radio-label {
+    font-size: 1.2rem;
+  }
+
+  .user-container .user-auth-button {
+    font-size: 1.2rem;
+  }
+  
+  .user-container p {
+    font-size: 1.2rem;
+  }
+
+  .professional-info-section {
+    padding: 2.2% 1% 2.2% 1%;
+  }
+  
+  .clinic-info-section {
+    padding: 2.2% 1% 2.2% 1%;
+  }
+}
