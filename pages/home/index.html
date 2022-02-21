@@ -47,11 +47,11 @@
                     <div class="radio-input-container">
                         <div>
                             <input type="radio" id="particular" name="tipo-pagamento">
-                            <label for="particular">Particular</label>
+                            <label for="particular" class="radio-label">Particular</label>
                         </div>
                         <div>
                             <input type="radio" id="convenio" name="tipo-pagamento">
-                            <label for="convenio">Convênio</label>
+                            <label for="convenio" class="radio-label">Convênio</label>
                         </div>
                     </div>
             
@@ -132,24 +132,18 @@
 
             <div class="selectedSpecialties">
                 <h3 class="selectedTitle">Ginecologista</h3>
-                <br><br>
                 <img src="./img/ginecologia.svg" alt="Imagem sobre ginecologia">
-                <br><br>
                 <p class="specialtiesDescription">O Ginecologista é o médico que entende tudo sobre a saúde íntima da mulher. 
                     É ele quem avalia o estado do sistema reprodutivo, realiza exames de rotina, por exemplo, o Papanicolau e indica os melhores tratamentos em casos de doenças.</p>
-                <br><br>
                 <button class="schedulingSpecialties">AGENDE SUA CONSULTA</button>  
                 
             </div>
             <div class="selectedSpecialties">
                 <h3 class="selectedTitle">Clínico Geral</h3>
-                <br><br>
                 <img src="./img/clinicogeral.svg" alt="Imagem sobre clínico geral">
-                <br><br>
                 <p class="specialtiesDescription">O Clínico Geral é o médico com conhecimento amplo a respeito do corpo humano. 
                     Assim, ele cuida de todas as fases da vida adulta e, se perceber que um paciente tem algum problema muito específico, 
                     realiza o encaminhamento para outro profissional especialista.</p>
-                <br><br>
                 <button class="schedulingSpecialties">AGENDE SUA CONSULTA</button>
                 
             </div>
@@ -195,7 +189,7 @@
                 <h2 id="onlineSchedulingTitle">MARQUE A SUA CONSULTA POR MEIO DO AGENDAMENTO ONLINE</h2>
                 <p class="onlineSchedulingP">O acesso à saúde precisa ser algo fácil, prático e rápido. Aqui no Tagendado, você conta com o agendamento online. Assim, basta escolher uma especialidade médica, além do melhor dia e horário, conforme a sua disponibilidade.</p>
                 <p class="onlineSchedulingP">Se preferir, você ainda pode baixar o aplicativo do Tagendado e marcar as suas consultas na palma da mão.</p>
-                <div>
+                <div class="appButtonsContainer">
                     <img src="../../components/footers/footer-1/img/DownloadAppStore.png" alt="Download via AppStore" class="appDownloadButton" />
                     <img src="../../components/footers/footer-1/img/DownloadGooglePlay.png" alt="Dowload via GooglePlay" class="appDownloadButton" />
                 </div>
@@ -205,7 +199,7 @@
             </div>
         </section>
         <section id="newProfessionals">
-            <div>
+            <div style="display: flex; align-items: flex-end;">
                 <img src="./img/médicos2.png" alt="Médicos" id="newProfessionalsPic">
             </div>
             <div id="newProfessionalsText">

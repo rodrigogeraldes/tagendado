@@ -74,7 +74,9 @@ img#imgGooglePlay{
 /* ============= MAIN ============= */
 section#sectionSearch{
     background-color: #2B8E91;
-    padding: 4% 3% 4% 3%;
+    padding: 7% 3% 7% 3%;
+
+    position: relative;
 }
 
 section#sectionSearch h2{
@@ -142,7 +144,7 @@ section#sectionSearch button {
 #medicalGroup{
     position: absolute;
     right: 70px;
-    top: 13.5%;
+    bottom: 0;
     z-index: 0;
 }
 
@@ -159,7 +161,7 @@ section#medicalSpecialties h3 {
 }
 
 div.specialties{
-  padding-left: 15%;
+  padding: 0 15%;
 }
 
 .buttonZone {
@@ -186,7 +188,7 @@ div.specialties p{
 
 div.benefitsContainer{
   display: flex;
-  gap: 100px;
+  gap: 5%;
 
   padding-left: 13.7%;
   padding-right: 13.7%;
@@ -259,10 +261,11 @@ button.schedulingButton{
 }
 
 section#specialtiesDetails{
+  gap: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  padding: 6% 14.3%;
+  padding: 0 14.3% 5% 14.3%;
 }
 
 div.selectedSpecialties{
@@ -277,8 +280,10 @@ div.selectedSpecialties{
   text-align: center;
 
   max-width: 395px;
+  max-height: 600px;
 
   padding: 30px 30px;
+  margin-top: 5%;
 }
 
 .selectedSpecialties img {
@@ -344,13 +349,13 @@ p#allSpecialtiesSubtitle{
 }
 
 #specialtiesList{
+  margin-top: 5%;
   display: flex;
   justify-content: space-between;
 }
 
 div#appPicture{
   float: right;
-  
 }
 
 #onlineScheduling {
@@ -386,9 +391,14 @@ div#appPicture{
   color: #525252;
 }
 
+.appButtonsContainer {
+  display: flex;
+}
+
 section#newProfessionals{
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   background-color: #2B8E91;
 
@@ -400,11 +410,8 @@ h2#newProfessionalsTitle{
   line-height: 47px;
   color: #B4FBFD;
   font-weight: bold;
-}
-
-section#newProfessionals{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+  text-align: right;
 }
 
 #newProfessionalsText{
@@ -412,8 +419,8 @@ section#newProfessionals{
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-
-  padding: 3% 0;
+  max-width: 50%;
+  padding: 0 0 3% 0;
 }
 
 .bePart{
@@ -423,12 +430,15 @@ section#newProfessionals{
   text-align: right;
   
   margin-left: 15%;
+  margin-bottom: 30px;
 }
 
 #connection{
   color: #B4FDFF;
   font-size: 19px;
   line-height: 23px;
+  margin-bottom: 30px;
+  text-align: right;
 }
 
 .NewProfessionalsButton{

@@ -139,3 +139,51 @@ p#responsiveWebsiteText{
     line-height: 24px;
     color: #525252;
 }
+
+section#allBenefits{
+    background-color: #2B8E91;
+    padding-top: 4.5%;
+}
+
+p#allBenefitsTitle{
+    color: #3CEBF0;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+}
+
+div#benefitsContainer{
+    display: flex;
+    gap: 84px;
+
+    padding-left: 12.3%;
+    padding-right: 10.5%;
+    padding-bottom: 3%;
+
+    margin-top: 5%;
+    text-align: center;
+}
+
+div#benefitsContainerItem{
+    align-items: center;
+    text-align: center;
+}
+
+p.allBenefitsSubtitle{
+    color: #3CEBF0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+}
+
+p.allbenefitsText{
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center !important;
+}
+
+img.allBenefitsImage{
+    text-align: center;
+}

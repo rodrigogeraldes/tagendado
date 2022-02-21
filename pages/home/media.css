@@ -1,5 +1,23 @@
 /* ============= MEDIA QUERIES ============= */
 
+@media (max-width: 1800px) {
+  #medicalGroup {
+    max-width: 570px;
+  }
+
+  .search {
+    max-width: 70%;
+  }
+
+  section#newProfessionals {
+    padding: 2% 10% 0 7%;
+  }
+
+  #newProfessionalsPic {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 1440px) {
   header {
     padding: 20px 1% 15px 1%;
@@ -8,8 +26,11 @@
   #medicalGroup {
     position: absolute;
     right: 30px;
-    top: 12.6%;
     width: 530px;
+  }
+
+  section#sectionSearch {
+    padding: 4% 3%
   }
 
   section#sectionSearch ul li{
@@ -33,6 +54,10 @@
     padding: 0 10%;
   }
 
+  .selectedSpecialties h3, .selectedSpecialties img, .selectedSpecialties p, .selectedSpecialties button{
+    margin-bottom: 15px;
+  }
+
   /* ============= SCHEDULING TUTORIAL ============= */
 
   section#schedulingTutorial{
@@ -43,7 +68,9 @@
 
   section#specialtiesDetails{
     gap: 5%;
-    padding: 6% 10%;
+    padding: 0 10%;
+    padding-bottom: 5%;
+    flex-wrap: wrap;
   }
 
   /* ============= SOME SPECIALTIES ============= */
@@ -65,7 +92,11 @@
   }
 
   #newProfessionalsPic {
-    max-width: 700px;
+    max-width: 750px;
+  }
+
+  #newProfessionalsText {
+    max-width: 40%;
   }
 
   /* ============= TESTIMONIAL ============= */
@@ -75,12 +106,106 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1360px) {
+  .search {
+    max-width: 60%;
+  }
+
+  section#schedulingTutorial{
+    padding: 2% 10%;
+  }
+
+  #specialtiesList {
+    gap: 3%;
+  }
+
+  #specialtiesListLeft {
+    width: 55%;
+  }
+  #specialtiesListRight {
+    width: 45%;
+  }
+
+  #newProfessionals {
+    padding-top: 0;
+  }
+
+  #newProfessionals {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2#newProfessionalsTitle{
+    /* margin-left: 0; */
+    align-self: center;
+  }
+  
+  #newProfessionalsText {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  #newProfessionalsText p {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  #medicalGroup {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .radio-label {
+    text-shadow: 1px 1px 5px #000;
+  }
+
+  .buttonZone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0
+  }
+
+  .buttonSpecialties {
+    width: 200px;
+  }
+
+  #onlineScheduling img {
+    max-width: 450px;
+  }
+
+  .onlineSchedulingP {
+    margin-bottom: 10px;
+  }
+
+  #schedulingTutorial {
+    align-items: center;
+  }
+
+  #schedulingTutorial img {
+    width: 450px;
+  }
+
+  #someSpecialties img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1024px) {
   .logotype img {
     width: 200px;
   }
 
   div.options {
     font-size: 1.2rem;
+  }
+
+  div.specialties{
+    padding: 0 7%;
   }
 }
