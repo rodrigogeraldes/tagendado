@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
+     <!-- Icons script -->
+     <script src="https://kit.fontawesome.com/65d4cbe54c.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./media.css" />
     <link rel="stylesheet" type="text/css" href="../../components/global.css" />
   </head>
   <body>
@@ -51,7 +55,7 @@
 
         <div class="doctor-details-header">
           <div class="doctor-image-container">
-            <img src="./img/doctor-photo.png" alt="Imagem do doutor">
+            <img src="./img/doctor-photo.png" alt="Imagem do doutor" id="doctor-image">
           </div>
 
           <div class="doctor-header-info-container">
@@ -99,7 +103,7 @@
           </div>
 
           <div class="doctor-address-map">
-            <img src="./img/doctor-address-map.png" alt="Foto do endereço no mapa">
+            <img src="./img/doctor-address-map.png" id="doctor-map" alt="Foto do endereço no mapa">
           </div>
         </div>
 
@@ -169,8 +173,7 @@
       <aside class="schedule-container">
         <div class="doctor-schedule-container">
           <div class="schedule-grid-container">
-            <img src="./img/arrow_forward_ios_black_24dp.svg" class="arrow-icon" alt="Seta para esquerda">
-
+            <i class="fas fa-chevron-left fa-lg arrow-icon" style="margin-left: 1rem;"></i>
             <div class="doctor-schedule-grid">
 
               <div class="schedule-day">
@@ -231,7 +234,7 @@
 
             </div>
 
-            <img src="./img/arrow_forward_ios_black_24dp.svg" class="arrow-icon" alt="Seta para direita">
+            <i class="fas fa-chevron-right fa-lg arrow-icon" style="margin-left: 1rem;"></i>
           </div>
           <div class="open-schedule-container">
             <button class="open-schedule-btn">Veja todos os horários</button>

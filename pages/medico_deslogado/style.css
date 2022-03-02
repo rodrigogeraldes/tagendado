@@ -1,7 +1,7 @@
 /********HEADER***********/
 
 div.optionsHeader{
-    font-size: 15px;
+    font-size: var(--fs-15);
     justify-content: center;
     display: grid;
     grid-template-columns:  2fr 1.5fr 1fr 1fr 1fr;
@@ -31,13 +31,13 @@ div.options{
     padding-left: 260px;
     padding-right: 135px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: var(--fs-15);
 }
 
 div.copyright{
     background-color: #363636;
     color: #ADADAD;
-    font-size: 14px;
+    font-size: var(--fs-14);
     padding: 16px;
     text-align: center;
 }
@@ -67,7 +67,7 @@ img#imgGooglePlay{
 /******PAGE******/
 #benefitsTitle{
     color: #86B9FF;
-    font-size: 40px;
+    font-size: var(--fs-40);
     line-height: 45px;
     width: 37%;
     font-weight: bold;
@@ -80,7 +80,7 @@ section#benefits{
 }
 
 p#benefitsSubtitle{
-    font-size: 26px;
+    font-size: var(--fs-26);
     line-height: 32px;
     color: #FFFFFF;
     
@@ -88,7 +88,7 @@ p#benefitsSubtitle{
 
 p#benefitsText{
     color: #86B9FF;
-    font-size: 22px;
+    font-size: var(--fs-22);
     line-height: 27px;
     font-weight: bold;
     width: 35%;
@@ -103,7 +103,7 @@ section#scheduling{
 p#schedulingTitle{
     text-align: center;
     color: #1560A0;
-    font-size: 30px;
+    font-size: var(--fs-30);
     line-height: 37px;
     font-weight: bold;
 }
@@ -111,7 +111,7 @@ p#schedulingTitle{
 p#schedulingSubtitle{
     text-align: center;
     font-weight: medium;
-    font-size: 19px;
+    font-size: var(--fs-19);
     line-height: 23px;
     color: #525252;
 }
@@ -126,7 +126,7 @@ div#responsiveWebsite{
 p#responsiveWebsiteTitle{
     color: #16688D;
     font-weight: bold;
-    font-size: 35px;
+    font-size: var(--fs-35);
     line-height: 43px;
 }
 div#responsiveWebsiteImage{
@@ -135,7 +135,7 @@ div#responsiveWebsiteImage{
 }
 
 p#responsiveWebsiteText{
-    font-size: 20px;
+    font-size: var(--fs-20);
     line-height: 24px;
     color: #525252;
 }
@@ -147,7 +147,7 @@ section#allBenefits{
 
 p#allBenefitsTitle{
     color: #3CEBF0;
-    font-size: 35px;
+    font-size: var(--fs-35);
     line-height: 43px;
     text-align: center;
 }
@@ -171,14 +171,14 @@ div#benefitsContainerItem{
 
 p.allBenefitsSubtitle{
     color: #3CEBF0;
-    font-size: 18px;
+    font-size: var(--fs-18);
     font-weight: bold;
     line-height: 22px;
     text-align: center;
 }
 
 p.allbenefitsText{
-    font-size: 14px;
+    font-size: var(--fs-14);
     line-height: 18px;
     color: #FFFFFF;
     text-align: center !important;
@@ -187,3 +187,170 @@ p.allbenefitsText{
 img.allBenefitsImage{
     text-align: center;
 }
+
+p#marketingLeftTitle{
+    font-size: 41px;
+    line-height: 50px;
+    color: #1560A0;
+    font-weight: bold;
+}
+
+p#marketingLeftSubtitle{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 90%;
+    color: black;
+}
+
+p#marketingLeftText{
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+button#marketingLeftButton{
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1em 3em;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #9BD30F;
+}
+
+
+div#marketingLeft{
+    padding-left: 24.5%;
+    width: 80%;
+    
+}
+
+section#marketing{
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+}
+
+section#WinWinSituation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+p#WinWinSituationTitle{
+    padding-top: 5%;
+    font-size: 35px;
+    line-height: 43px;
+    align-items: center;
+    font-weight: bold;
+    color: #2B8E91;
+}
+
+p#WinWinSituationSubtitle{
+    font-size: 23px;
+    line-height: 28px;
+    color: #525252;
+}
+
+ul#WinWinSituationList{
+    font-size: 16px;
+    line-height: 32px;
+    color: #525252;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+li.listIcon{
+    color: #2B8E91;
+}
+
+span.listText{
+    color: black;
+}
+
+section#freeRegister{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+div#freeRegisterContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+p#freeRegisterTitle{
+    color: #1560A0;
+    font-size: 41px;
+    line-height: 50px;
+    text-align: center;
+}
+
+p#freeRegisterSubtitle{
+    font-size: 19px;
+    text-align: center;
+    color: #525252;
+    line-height: 32px;
+}
+
+
+/*FORMULARIO*/
+.form-label {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.costumer-service-form {
+    margin-top: 12%;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .costumer-service-input {
+    border: #525252 solid 1px;
+    border-radius: 6px;
+    
+    width: 37vw;
+  
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .costumer-service-btn {
+    border: none;
+    border-radius: 1rem;
+  
+    font-size: 1.6rem;
+    font-weight: bold;
+  
+    display: flex;
+    justify-content: center;
+    width: 96%;
+
+    margin-top: 2%;
+  
+    padding: 1em 1.5em;
+  
+    cursor: pointer;
+    color: #FFF;
+    background-color: #9BD30F;
+  }
+
+  #telefone{
+    display: flex;
+  }
+
+  div#freeRegisterLeft{
+      padding-left: 22.5%;
+  }
+
+  div#freeRegisterRight{
+    margin-left: 22.5%;
+    padding-top: 10%;
+}
+
+  div.checkbox-container{
+      display: flex;
+  }

@@ -210,10 +210,15 @@ div.options{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 260px;
-  padding-right: 135px;
+  padding-left: 13.5%;
+  padding-right: 7%;
   line-height: 25px;
   font-size: 15px;
+  width: 100%;
+}
+
+footer{
+  width: 100%;
 }
 
 div.copyright{
@@ -242,22 +247,6 @@ a#seeAll{
   font-style: italic;
 }
 img#imgGooglePlay{
-  height: 35px;
-  width: 117px;
-}
-
-/* ============= MEDIA QUERIES ============= */
-
-@media (max-width: 1480px) {
-  .header {
-    padding: 20px 6%;
-  }
-
-  .ask-info-container {
-    padding: 2.2% 1.5% 2.2% 6%;
-  }
-
-  .ask-form-container {
-    padding-right: 6%;
-  }
+  height: 46px;
+  width: 156px;
 }

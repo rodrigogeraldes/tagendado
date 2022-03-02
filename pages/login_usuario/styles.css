@@ -27,13 +27,13 @@
   width: 28%;
   max-height: 5rem;
 
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   padding: 0 2rem;
   margin: 0 0.2rem;
 }
 
 .search-form .radio-label {
-  font-size: 1.5rem;
+  font-size: var(--fs-15);
 }
 
 .radio-input-container {
@@ -47,7 +47,7 @@
   border: none;
   border-radius: 10px;
 
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: bold;
 
   padding: 1em 3em;
@@ -65,11 +65,11 @@
 .user-container .user-auth-button {
   text-decoration: none;
   color: #FFF;
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
 }
 
 .user-container p {
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   margin: 0 0.5rem
 }
 
@@ -82,7 +82,7 @@
 
 .page-identifier {
   color: #8D8D8D;
-  font-size: 1.4rem;
+  font-size: var(--fs-16);
   font-weight: 500;
 }
 
@@ -101,14 +101,14 @@
 }
 
 .info-main-text {
-  font-size: 3.9rem;
+  font-size: var(--fs-39);
   font-weight: bold;
   line-height: 43px;
   color: #2B8E91;
 }
 
 .info-sub-text {
-  font-size: 2.3rem;
+  font-size: var(--fs-23);
   font-weight: 500;
   margin-top: 1%;
   color: #525252;
@@ -135,7 +135,7 @@
 }
 
 .stamp-text {
-  font-size: 2rem;
+  font-size: var(--fs-20);
   font-weight: bold;
   color: #2B8E91;
   
@@ -164,13 +164,13 @@
 }
 
 .form-main-text {
-  font-size: 3.5rem;
+  font-size: var(--fs-35);
   font-weight: bold;
   color: #000000;
 }
 
 .form-sub-text {
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   font-weight: 500;
   color: #525252;
 }
@@ -190,13 +190,13 @@
 }
 
 .login-form-label {
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   color: #000000;
 }
 
 .login-form-input {
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   padding: 2.5% 1.5%;
   margin-top: 5px;
   width: 100%;
@@ -208,7 +208,7 @@
 .login-form-btn {
   border: none;
   border-radius: 1rem;
-  font-size: 2rem;
+  font-size: var(--fs-20);
   font-weight: bold;
   color: #FFF;
   background-color: #2B8E91;
@@ -237,7 +237,7 @@
 }
 
 .checkbox-text, .forgot-password {
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   color: #525252;
 }
@@ -253,13 +253,13 @@
 /* ============= SIGN UP LINE ============= */
 
 .signup-text {
-  font-size: 1.5rem;
+  font-size: var(--fs-15);
   font-weight: 500;
   color: #525252;
 }
 
 .signup-link {
-  font-size: 1.5rem;
+  font-size: var(--fs-15);
   font-weight: 500;
   color: #525252;
 }
@@ -282,12 +282,15 @@
   flex: 1;
   border: none;
   border-radius: 3px;
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-weight: 500;
   color: #FFFFFF;
   cursor: pointer;
 
   margin: 0 1rem;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .facebook-btn {
@@ -316,13 +319,13 @@ div.options{
   padding-left: 260px;
   padding-right: 135px;
   line-height: 25px;
-  font-size: 15px;
+  font-size: var(--fs-15);
 }
 
 div.copyright{
   background-color: #363636;
   color: #ADADAD;
-  font-size: 14px;
+  font-size: var(--fs-14);
   padding: 16px;
   text-align: center;
 }
