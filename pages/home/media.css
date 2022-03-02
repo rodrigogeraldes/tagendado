@@ -1,6 +1,11 @@
 /* ============= MEDIA QUERIES ============= */
 
 @media (max-width: 1800px) {
+  body {
+    --fs-40: 2rem;
+    --fs-21: 1.2rem;
+  }
+
   #medicalGroup {
     max-width: 570px;
   }

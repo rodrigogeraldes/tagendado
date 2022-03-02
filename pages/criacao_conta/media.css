@@ -1,0 +1,60 @@
+/* ============= MEDIA QUERIES ============= */
+
+@media (max-width: 1800px) {
+
+}
+
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1360px) {
+
+}
+
+@media (max-width: 1140px) {
+
+}
+
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 1024px) {
+    .formInputs{
+        width: 372.38px;
+    }
+
+    .password{
+        width: 187px;
+    }
+
+    #genero{
+        width: 162px;
+    }
+
+    #dataNascimento{
+        width: 200px !important;
+        margin-left: 9px !important; 
+    }
+
+    div#createAccountForm {
+        padding-right: 6%;
+    }
+
+    #estado{
+        width: 55px !important;
+    }
+
+    #cidade{
+        width: 310px !important;
+    }
+
+    .endereco{
+        margin-left: 109px !important;
+    }
+}

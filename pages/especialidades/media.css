@@ -1,0 +1,191 @@
+/* ============= MEDIA QUERIES ============= */
+
+@media (max-width: 1460px) {
+  .header {
+    padding: 20px 6%;
+  }
+
+  .filter-container {
+    padding: 2.5% 6%;
+  }
+
+  .main {
+    padding: 0 6%;
+    padding-top: 2.5%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .header {
+    padding: 15px 5%;
+  }
+
+  .filter-container {
+    padding: 2.5% 5%;
+  }
+
+  .main {
+    padding: 0 5%;
+    padding-top: 2.5%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .header {
+    padding: 10px 1%;
+  }
+
+  .logo {
+    max-height: 45px;
+  }
+
+  .search-input {
+    padding: 1.4rem 1.4rem;
+  }
+
+  .btn-search {
+    padding: 1em 1.5em;
+  }
+
+  .filter-container {
+    padding: 2.5% 1%;
+  }
+
+  .main {
+    padding: 0 1%;
+    padding-top: 2.5%;
+  }
+}
+
+@media (max-width: 1190px) {
+  .btn-search {
+    padding: 1em 1.2em;
+    margin: 0 5px;
+
+    font-size: 1.2rem;
+  }
+
+  .search-form .radio-label {
+    font-size: 1.2rem;
+  }
+
+  .user-container .user-auth-button {
+    font-size: 1.2rem;
+  }
+  
+  .user-container p {
+    font-size: 1.2rem;
+  }
+
+  .filter-container {
+    padding: 2.5% 1%;
+  }
+
+  .main {
+    padding: 0 1%;
+    padding-top: 2.5%;
+  }
+
+  /* ============= DOCTOR CARD INFO ============= */
+
+  .doctor-image {
+    width: 130px;
+  }
+  
+  .doctor-name {
+    font-size: 2rem;
+  }
+  
+  .doctor-specialties {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  
+  .rating-counter {
+    font-size: 1.1rem;
+  }
+
+  /* ============= DOCTOR CARD ADDRESS ============= */
+
+  .address-title-btn {
+    font-size: 1.4rem;
+    padding: 0.5em 0;
+  }
+
+  .address-info span{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  /* ============= DOCTOR SCHEDULE ============= */
+
+  .doctor-schedule-grid {
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .day-title-weekday {
+    font-size: 1.3rem;
+  }
+
+  .day-title-date {
+    font-size: 1.1rem;
+  }
+
+  .time-available {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+  }
+
+  .time-unavailable-container {
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .open-schedule-container {
+    padding-top: 1.2rem;
+  }
+
+  .open-schedule-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .doctor-cards-section {
+    max-width: 70%;
+  }
+
+  img.doctor-image {
+    width: 120px;
+  }
+
+  .doctor-rating i {
+    width: 20px;
+  }
+
+  .doctor-schedule-container {
+    padding: 15px;
+  }
+
+  .doctor-schedule-grid {
+    gap: 0.5rem
+  }
+
+  .day-title-container {
+    text-align: center;
+  }
+
+  .day-title-weekday {
+    font-size: 1.1rem;
+  }
+
+  .day-title-date {
+    font-size: 0.9rem;
+  }
+
+  button.time-available {
+    font-size: 1.1rem;
+  }
+}

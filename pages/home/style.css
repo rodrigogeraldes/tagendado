@@ -5,7 +5,7 @@ header .options {
   align-items: center;
   justify-content: space-around;
 
-  font-size: 1.5rem;
+  font-size: var(--fs-15);
 
   text-align: center;
 }
@@ -36,13 +36,13 @@ footer .options{
   padding-left: 13.5%;
   padding-right: 7%;
   line-height: 25px;
-  font-size: 15px;
+  font-size: var(--fs-15);
 }
 
 footer .copyright{
     background-color: #363636;
     color: #ADADAD;
-    font-size: 14px;
+    font-size: var(--fs-14);
     padding: 16px;
     text-align: center;
 }
@@ -80,12 +80,12 @@ section#sectionSearch{
 }
 
 section#sectionSearch h2{
-    font-size: 4rem;
+    font-size: var(--fs-40);
     color: #C4FDFF;
 }
 
 section#sectionSearch ul li{
-    font-size: 21px;
+    font-size: var(--fs-21);
     color: #ffffff;
     display: inline-block;
 
@@ -109,13 +109,13 @@ section#sectionSearch form .search-input {
     width: 442px;
     height: 56px;
   
-    font-size: 14px;
+    font-size: var(--fs-14);
     padding: 0 20px;
     margin: 0 10px
   }
   
 section#sectionSearch form label {
-    font-size: 15px;
+    font-size: var(--fs-15);
   }
   
 section#sectionSearch form .radio-input-container {
@@ -131,7 +131,7 @@ section#sectionSearch form .radio-input-container {
 section#sectionSearch button {
     border: none;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: var(--fs-16);
     font-weight: bold;
   
     padding: 10px 30px;
@@ -155,7 +155,7 @@ div.search{
 
 section#medicalSpecialties h3 {
   color: #1560A0;
-  font-size: 28px;
+  font-size: var(--fs-28);
   padding-top: 4.7%;
   text-align: center;
 }
@@ -176,7 +176,7 @@ button.buttonSpecialties{
   border-radius: 10px;
   color: #ffffff;
   height: 63px;
-  font-size: 18px;
+  font-size: var(--fs-18);
   margin-left: 2%;
   margin-bottom: 1%;
   border: 0;
@@ -204,7 +204,7 @@ div.benefits{
 }
 
 .benefitsTitle{
-  font-size: 1.7rem;
+  font-size: var(--fs-17);
   line-height: 20px;
   font-weight: bold;
   color: #1560A0;
@@ -213,7 +213,7 @@ div.benefits{
 }
 
 .benefitsDetails{
-  font-size: 14px !important;
+  font-size: var(--fs-14) !important;
   color: #525252 !important;
   line-height: 18px !important;
 }
@@ -237,13 +237,13 @@ div.schedulingTutorialContent{
 
 h2.schedulingTutorialTitle{
   color: #86B9FF;
-  font-size: 28px;
+  font-size: var(--fs-28);
   font-weight: bold;
 }
 
 p.schedulingTutorialText{
   color: #ffffff;
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 19px;
   margin-bottom: 50px;
   opacity: 90%;
@@ -255,7 +255,7 @@ button.schedulingButton{
   border-radius: 10px;
   background-color: #9BD30F;
   color: white;
-  font-size: 14px;
+  font-size: var(--fs-14);
   font-weight: bold;
   border: 0;
 }
@@ -292,14 +292,14 @@ div.selectedSpecialties{
 
 .selectedTitle{
   color: #1560A0;
-  font-size: 24px;
+  font-size: var(--fs-24);
   line-height: 29px;
   text-align: center;
 }
 
 .specialtiesDescription{
   color: #7C7C7C;
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 19px;
 }
 
@@ -308,7 +308,7 @@ div.selectedSpecialties{
   border: none;
   border-radius: 10px;
   color: white;
-  font-size: 1.4rem;
+  font-size: var(--fs-14);
   font-weight: bold;
 
   padding: 1em 1em;
@@ -330,21 +330,21 @@ div#allSpecialties{
 }
 
 p#allSpecialtiesSubtitle{
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   line-height: 23px;
   color: #ffffff;
 }
 
 #specialtiesNames{
   color: white;
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 23px;
   padding-left: 20px;
 }
 
 .specialtiesListTitle{
   color: #86B9FF;
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 23px;
 }
 
@@ -366,7 +366,7 @@ div#appPicture{
 
 #onlineSchedulingTitle{
   color: #1560A0;
-  font-size: 28px;
+  font-size: var(--fs-28);
   line-height: 34px;
   font-weight: bold;
 }
@@ -386,7 +386,7 @@ div#appPicture{
 }
 
 .onlineSchedulingP{
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 19px;
   color: #525252;
 }
@@ -406,7 +406,7 @@ section#newProfessionals{
 }
 
 h2#newProfessionalsTitle{
-  font-size: 38px;
+  font-size: var(--fs-38);
   line-height: 47px;
   color: #B4FBFD;
   font-weight: bold;
@@ -424,7 +424,7 @@ h2#newProfessionalsTitle{
 }
 
 .bePart{
-  font-size:  1.6rem;
+  font-size: var(--fs-16);
   line-height: 19px;
   color: #ffffff;
   text-align: right;
@@ -435,7 +435,7 @@ h2#newProfessionalsTitle{
 
 #connection{
   color: #B4FDFF;
-  font-size: 19px;
+  font-size: var(--fs-19);
   line-height: 23px;
   margin-bottom: 30px;
   text-align: right;
@@ -447,7 +447,7 @@ h2#newProfessionalsTitle{
   width: 37.7%;
   border-radius: 10px;
   color: #2B8E91;
-  font-size: 16px;
+  font-size: var(--fs-16);
   font-weight: bold;
   border: none;
 }
@@ -459,7 +459,7 @@ h2#newProfessionalsTitle{
 
 #testimonialTitle{
   color: #5A5A5A;
-  font-size: 28px;
+  font-size: var(--fs-28);
   line-height: 34px;
 }
 
@@ -497,13 +497,13 @@ h2#newProfessionalsTitle{
 }
 
 .testimonial-title {
-  font-size: 2rem;
+  font-size: var(--fs-20);
   font-weight: 500;
   color: #1560A0;
 }
 
 .testimonial-text {
-  font-size: 1.6rem;
+  font-size: var(--fs-16);
   font-style: italic;
 }
 
